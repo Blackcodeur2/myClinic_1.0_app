@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <RootNamespace>MyClinic_1._0</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bunifu.UI.WinForms" Version="9.1.0" />
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="FontAwesome.Sharp" Version="6.6.0" />
+    <PackageReference Include="Guna.Charts.WinForms" Version="1.1.0" />
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MySql.Data" Version="9.7.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\cores\dtos\" />
+    <Folder Include="src\cores\common\" />
+    <Folder Include="src\cores\logging\" />
+    <Folder Include="src\cores\validators\" />
+    <Folder Include="src\data\entities\" />
+    <Folder Include="src\data\migrations\" />
+    <Folder Include="src\data\database\" />
+    <Folder Include="src\data\seeders\" />
+    <Folder Include="src\data\repositories\" />
+    <Folder Include="src\features\controls\" />
+    <Folder Include="src\features\forms\auth\" />
+    <Folder Include="src\features\forms\admin\" />
+    <Folder Include="src\features\forms\medecin\" />
+    <Folder Include="src\features\forms\receptioniste\" />
+    <Folder Include="src\features\forms\splash\" />
+    <Folder Include="src\services\" />
+  </ItemGroup>
+
+</Project>
