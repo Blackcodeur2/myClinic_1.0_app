@@ -32,10 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReceptionisteLayout));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -51,6 +51,16 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2ContainerControl1 = new Guna.UI2.WinForms.Guna2ContainerControl();
             guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
             guna2ContainerControl2 = new Guna.UI2.WinForms.Guna2ContainerControl();
@@ -65,8 +75,14 @@
             guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             guna2ContainerControl7 = new Guna.UI2.WinForms.Guna2ContainerControl();
             label1 = new Label();
+            btnReceptionisteAccueil = new Guna.UI2.WinForms.Guna2TileButton();
+            guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
+            guna2TileButton2 = new Guna.UI2.WinForms.Guna2TileButton();
+            guna2TileButton3 = new Guna.UI2.WinForms.Guna2TileButton();
+            guna2TileButton4 = new Guna.UI2.WinForms.Guna2TileButton();
             guna2ContainerControl1.SuspendLayout();
             guna2ContainerControl2.SuspendLayout();
+            guna2ContainerControl3.SuspendLayout();
             guna2ContainerControl4.SuspendLayout();
             guna2ContainerControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).BeginInit();
@@ -99,24 +115,29 @@
             // guna2ContainerControl2
             // 
             guna2ContainerControl2.Controls.Add(label2);
-            guna2ContainerControl2.CustomizableEdges = customizableEdges20;
+            guna2ContainerControl2.CustomizableEdges = customizableEdges30;
             guna2ContainerControl2.Dock = DockStyle.Bottom;
             guna2ContainerControl2.FillColor = Color.FromArgb(41, 41, 41);
             guna2ContainerControl2.Location = new Point(0, 655);
             guna2ContainerControl2.Name = "guna2ContainerControl2";
-            guna2ContainerControl2.ShadowDecoration.CustomizableEdges = customizableEdges21;
+            guna2ContainerControl2.ShadowDecoration.CustomizableEdges = customizableEdges31;
             guna2ContainerControl2.Size = new Size(1384, 36);
             guna2ContainerControl2.TabIndex = 1;
             guna2ContainerControl2.Text = "guna2ContainerControl2";
             // 
             // guna2ContainerControl3
             // 
-            guna2ContainerControl3.CustomizableEdges = customizableEdges18;
+            guna2ContainerControl3.Controls.Add(guna2TileButton4);
+            guna2ContainerControl3.Controls.Add(guna2TileButton3);
+            guna2ContainerControl3.Controls.Add(guna2TileButton2);
+            guna2ContainerControl3.Controls.Add(guna2TileButton1);
+            guna2ContainerControl3.Controls.Add(btnReceptionisteAccueil);
+            guna2ContainerControl3.CustomizableEdges = customizableEdges28;
             guna2ContainerControl3.Dock = DockStyle.Left;
             guna2ContainerControl3.FillColor = Color.FromArgb(31, 44, 63);
             guna2ContainerControl3.Location = new Point(0, 66);
             guna2ContainerControl3.Name = "guna2ContainerControl3";
-            guna2ContainerControl3.ShadowDecoration.CustomizableEdges = customizableEdges19;
+            guna2ContainerControl3.ShadowDecoration.CustomizableEdges = customizableEdges29;
             guna2ContainerControl3.Size = new Size(280, 589);
             guna2ContainerControl3.TabIndex = 2;
             guna2ContainerControl3.Text = "guna2ContainerControl3";
@@ -266,6 +287,106 @@
             label1.TabIndex = 5;
             label1.Text = "MyClinic";
             // 
+            // btnReceptionisteAccueil
+            // 
+            btnReceptionisteAccueil.Animated = true;
+            btnReceptionisteAccueil.BorderColor = Color.Transparent;
+            btnReceptionisteAccueil.CustomizableEdges = customizableEdges26;
+            btnReceptionisteAccueil.DisabledState.BorderColor = Color.DarkGray;
+            btnReceptionisteAccueil.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnReceptionisteAccueil.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnReceptionisteAccueil.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnReceptionisteAccueil.FillColor = Color.FromArgb(31, 44, 63);
+            btnReceptionisteAccueil.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnReceptionisteAccueil.ForeColor = Color.White;
+            btnReceptionisteAccueil.Location = new Point(0, 55);
+            btnReceptionisteAccueil.Name = "btnReceptionisteAccueil";
+            btnReceptionisteAccueil.PressedColor = Color.FromArgb(31, 44, 63);
+            btnReceptionisteAccueil.ShadowDecoration.CustomizableEdges = customizableEdges27;
+            btnReceptionisteAccueil.Size = new Size(280, 64);
+            btnReceptionisteAccueil.TabIndex = 0;
+            btnReceptionisteAccueil.Text = "Accueil";
+            // 
+            // guna2TileButton1
+            // 
+            guna2TileButton1.Animated = true;
+            guna2TileButton1.BorderColor = Color.Transparent;
+            guna2TileButton1.CustomizableEdges = customizableEdges24;
+            guna2TileButton1.DisabledState.BorderColor = Color.DarkGray;
+            guna2TileButton1.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2TileButton1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2TileButton1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2TileButton1.FillColor = Color.FromArgb(31, 44, 63);
+            guna2TileButton1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2TileButton1.ForeColor = Color.White;
+            guna2TileButton1.Location = new Point(0, 125);
+            guna2TileButton1.Name = "guna2TileButton1";
+            guna2TileButton1.PressedColor = Color.FromArgb(31, 44, 63);
+            guna2TileButton1.ShadowDecoration.CustomizableEdges = customizableEdges25;
+            guna2TileButton1.Size = new Size(280, 64);
+            guna2TileButton1.TabIndex = 1;
+            guna2TileButton1.Text = "Accueil";
+            // 
+            // guna2TileButton2
+            // 
+            guna2TileButton2.Animated = true;
+            guna2TileButton2.BorderColor = Color.Transparent;
+            guna2TileButton2.CustomizableEdges = customizableEdges22;
+            guna2TileButton2.DisabledState.BorderColor = Color.DarkGray;
+            guna2TileButton2.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2TileButton2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2TileButton2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2TileButton2.FillColor = Color.FromArgb(31, 44, 63);
+            guna2TileButton2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2TileButton2.ForeColor = Color.White;
+            guna2TileButton2.Location = new Point(0, 195);
+            guna2TileButton2.Name = "guna2TileButton2";
+            guna2TileButton2.PressedColor = Color.FromArgb(31, 44, 63);
+            guna2TileButton2.ShadowDecoration.CustomizableEdges = customizableEdges23;
+            guna2TileButton2.Size = new Size(280, 64);
+            guna2TileButton2.TabIndex = 2;
+            guna2TileButton2.Text = "Accueil";
+            // 
+            // guna2TileButton3
+            // 
+            guna2TileButton3.Animated = true;
+            guna2TileButton3.BorderColor = Color.Transparent;
+            guna2TileButton3.CustomizableEdges = customizableEdges20;
+            guna2TileButton3.DisabledState.BorderColor = Color.DarkGray;
+            guna2TileButton3.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2TileButton3.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2TileButton3.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2TileButton3.FillColor = Color.FromArgb(31, 44, 63);
+            guna2TileButton3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2TileButton3.ForeColor = Color.White;
+            guna2TileButton3.Location = new Point(0, 265);
+            guna2TileButton3.Name = "guna2TileButton3";
+            guna2TileButton3.PressedColor = Color.FromArgb(31, 44, 63);
+            guna2TileButton3.ShadowDecoration.CustomizableEdges = customizableEdges21;
+            guna2TileButton3.Size = new Size(280, 64);
+            guna2TileButton3.TabIndex = 3;
+            guna2TileButton3.Text = "Accueil";
+            // 
+            // guna2TileButton4
+            // 
+            guna2TileButton4.Animated = true;
+            guna2TileButton4.BorderColor = Color.Transparent;
+            guna2TileButton4.CustomizableEdges = customizableEdges18;
+            guna2TileButton4.DisabledState.BorderColor = Color.DarkGray;
+            guna2TileButton4.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2TileButton4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2TileButton4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2TileButton4.FillColor = Color.FromArgb(31, 44, 63);
+            guna2TileButton4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2TileButton4.ForeColor = Color.White;
+            guna2TileButton4.Location = new Point(0, 335);
+            guna2TileButton4.Name = "guna2TileButton4";
+            guna2TileButton4.PressedColor = Color.FromArgb(31, 44, 63);
+            guna2TileButton4.ShadowDecoration.CustomizableEdges = customizableEdges19;
+            guna2TileButton4.Size = new Size(280, 64);
+            guna2TileButton4.TabIndex = 4;
+            guna2TileButton4.Text = "Accueil";
+            // 
             // ReceptionisteLayout
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
@@ -282,6 +403,7 @@
             guna2ContainerControl1.ResumeLayout(false);
             guna2ContainerControl2.ResumeLayout(false);
             guna2ContainerControl2.PerformLayout();
+            guna2ContainerControl3.ResumeLayout(false);
             guna2ContainerControl4.ResumeLayout(false);
             guna2ContainerControl6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).EndInit();
@@ -306,5 +428,10 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl7;
         private Label label1;
+        private Guna.UI2.WinForms.Guna2TileButton btnReceptionisteAccueil;
+        private Guna.UI2.WinForms.Guna2TileButton guna2TileButton4;
+        private Guna.UI2.WinForms.Guna2TileButton guna2TileButton3;
+        private Guna.UI2.WinForms.Guna2TileButton guna2TileButton2;
+        private Guna.UI2.WinForms.Guna2TileButton guna2TileButton1;
     }
 }
