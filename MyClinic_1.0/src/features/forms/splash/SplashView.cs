@@ -16,5 +16,10 @@ namespace MyClinic_1._0.src.features.forms.splash
         {
             InitializeComponent();
         }
+
+        private void SplashView_Load(object sender, EventArgs e)
+        {
+            var text = "bonjour";
+        }
     }
 }
