@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MyClinic_1._0.src.features.forms.splash
+namespace MyClinic_1._0.src.features.forms.auth
 {
-    public partial class SplashView : Form
+    public partial class LoginView : Form
     {
-        public SplashView()
+        public LoginView()
         {
             InitializeComponent();
-        }
-
-        private void SplashView_Load(object sender, EventArgs e)
-        {
-            var text = "bonjour";
         }
     }
 }

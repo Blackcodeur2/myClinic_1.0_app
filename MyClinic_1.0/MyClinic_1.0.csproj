@@ -45,11 +45,25 @@
     <Folder Include="src\data\seeders\" />
     <Folder Include="src\data\repositories\" />
     <Folder Include="src\features\controls\" />
-    <Folder Include="src\features\forms\auth\" />
     <Folder Include="src\features\forms\admin\" />
     <Folder Include="src\features\forms\medecin\" />
     <Folder Include="src\features\forms\receptioniste\" />
     <Folder Include="src\services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
