@@ -1,17 +1,42 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using MyClinic_1._0.src.data.database;
+using MyClinic_1._0.src.features.forms.splash;
+
 namespace MyClinic_1._0
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
+        public static IServiceProvider? ServiceProvider;
+
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+
+            var config = new ConfigurationBuilder()
+                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+                .AddJsonFile("appsettings.json")
+                .Build();
+
+            var services = new ServiceCollection();
+
+            services.AddSingleton<IConfiguration>(config);
+
+            services.AddDbContext<AppDbContext>(options =>
+            {
+                var conn = config.GetConnectionString("DefaultConnection");
+
+                options.UseMySql(
+                    conn,
+                    ServerVersion.AutoDetect(conn)
+                );
+            });
+
+            ServiceProvider = services.BuildServiceProvider();
+
+            Application.Run(new SplashView());
         }
     }
 }

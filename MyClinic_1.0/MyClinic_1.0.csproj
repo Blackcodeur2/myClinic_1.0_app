@@ -10,6 +10,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.1.0" />
     <PackageReference Include="Bunifu.UI.WinForms" Version="9.1.0" />
     <PackageReference Include="FluentValidation" Version="12.1.1" />
     <PackageReference Include="FontAwesome.Sharp" Version="6.6.0" />
@@ -20,6 +31,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.7" />
     <PackageReference Include="MySql.Data" Version="9.7.0" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.0" />
   </ItemGroup>
@@ -29,9 +42,6 @@
     <Folder Include="src\cores\common\" />
     <Folder Include="src\cores\logging\" />
     <Folder Include="src\cores\validators\" />
-    <Folder Include="src\data\entities\" />
-    <Folder Include="src\data\migrations\" />
-    <Folder Include="src\data\database\" />
     <Folder Include="src\data\seeders\" />
     <Folder Include="src\data\repositories\" />
     <Folder Include="src\features\controls\" />
@@ -39,7 +49,6 @@
     <Folder Include="src\features\forms\admin\" />
     <Folder Include="src\features\forms\medecin\" />
     <Folder Include="src\features\forms\receptioniste\" />
-    <Folder Include="src\features\forms\splash\" />
     <Folder Include="src\services\" />
   </ItemGroup>
 
