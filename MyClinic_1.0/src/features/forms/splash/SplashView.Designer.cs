@@ -44,6 +44,7 @@
             label1 = new Label();
             guna2ContainerControl3 = new Guna.UI2.WinForms.Guna2ContainerControl();
             myProgressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
+            progressTimer = new System.Windows.Forms.Timer(components);
             guna2ContainerControl2.SuspendLayout();
             guna2ContainerControl3.SuspendLayout();
             SuspendLayout();
@@ -63,7 +64,7 @@
             guna2ContainerControl1.Location = new Point(0, 0);
             guna2ContainerControl1.Name = "guna2ContainerControl1";
             guna2ContainerControl1.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2ContainerControl1.Size = new Size(879, 44);
+            guna2ContainerControl1.Size = new Size(879, 62);
             guna2ContainerControl1.TabIndex = 0;
             guna2ContainerControl1.Text = "guna2ContainerControl1";
             // 
@@ -100,10 +101,10 @@
             guna2ContainerControl3.Dock = DockStyle.Fill;
             guna2ContainerControl3.FillColor = Color.Transparent;
             guna2ContainerControl3.ForeColor = Color.White;
-            guna2ContainerControl3.Location = new Point(0, 44);
+            guna2ContainerControl3.Location = new Point(0, 62);
             guna2ContainerControl3.Name = "guna2ContainerControl3";
             guna2ContainerControl3.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2ContainerControl3.Size = new Size(879, 568);
+            guna2ContainerControl3.Size = new Size(879, 550);
             guna2ContainerControl3.TabIndex = 2;
             guna2ContainerControl3.Text = "guna2ContainerControl3";
             // 
@@ -159,5 +160,6 @@
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl1;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl3;
         private Guna.UI2.WinForms.Guna2ProgressBar myProgressBar;
+        private System.Windows.Forms.Timer progressTimer;
     }
 }

@@ -45,9 +45,6 @@
     <Folder Include="src\data\seeders\" />
     <Folder Include="src\data\repositories\" />
     <Folder Include="src\features\controls\" />
-    <Folder Include="src\features\forms\admin\" />
-    <Folder Include="src\features\forms\medecin\" />
-    <Folder Include="src\features\forms\receptioniste\" />
     <Folder Include="src\services\" />
   </ItemGroup>
 
