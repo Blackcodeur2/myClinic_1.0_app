@@ -107,6 +107,7 @@
             guna2ContainerControl3.Size = new Size(879, 550);
             guna2ContainerControl3.TabIndex = 2;
             guna2ContainerControl3.Text = "guna2ContainerControl3";
+            guna2ContainerControl3.Click += guna2ContainerControl3_Click;
             // 
             // myProgressBar
             // 
@@ -131,6 +132,10 @@
             myProgressBar.Text = "guna2ProgressBar1";
             myProgressBar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             myProgressBar.Value = 20;
+            // 
+            // progressTimer
+            // 
+            progressTimer.Tick += progressTimer_Tick;
             // 
             // SplashView
             // 

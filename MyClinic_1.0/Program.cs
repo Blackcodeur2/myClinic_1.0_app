@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MyClinic_1._0.src.data.database;
+using MyClinic_1._0.src.features.forms.admin;
 using MyClinic_1._0.src.features.forms.splash;
 
 namespace MyClinic_1._0
@@ -36,7 +37,16 @@ namespace MyClinic_1._0
 
             ServiceProvider = services.BuildServiceProvider();
 
-            Application.Run(new SplashView());
+            using (var splash = new SplashView())
+            {
+                // Affiche le splash en modal ; si DialogResult.OK on continue
+                if (splash.ShowDialog() != DialogResult.OK)
+                {
+                    return;
+                }
+            }
+
+            Application.Run(new AdminLayout());
         }
     }
 }

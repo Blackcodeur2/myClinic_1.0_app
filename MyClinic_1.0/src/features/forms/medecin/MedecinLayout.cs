@@ -16,5 +16,10 @@ namespace MyClinic_1._0.src.features.forms.medecin
         {
             InitializeComponent();
         }
+
+        private void MedecinLayout_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
