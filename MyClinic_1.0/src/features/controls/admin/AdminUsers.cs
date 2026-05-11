@@ -13,11 +13,9 @@ namespace MyClinic_1._0.src.features.controls.admin
 {
     public partial class AdminUsers : UserControl
     {
-        private AdminLayout adminLayoutForm;
         public AdminUsers()
         {
             InitializeComponent();
-            this.adminLayoutForm = new AdminLayout();
         }
 
         private void AdminUsers_Load(object sender, EventArgs e)
@@ -37,7 +35,7 @@ namespace MyClinic_1._0.src.features.controls.admin
 
         private void btnOpenUsersAddForm_Click(object sender, EventArgs e)
         {
-            this.adminLayoutForm.showPage("new-user");
+            
         }
     }
 }

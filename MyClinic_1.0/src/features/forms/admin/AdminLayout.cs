@@ -1,5 +1,6 @@
 ﻿using Guna.UI2.WinForms;
 using MyClinic_1._0.src.features.controls.admin;
+using MyClinic_1._0.src.features.controls.shared;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,6 +25,7 @@ namespace MyClinic_1._0.src.features.forms.admin
             _pages.Add("dashboard", new AdminDashboard());
             _pages.Add("users", new AdminUsers());
             _pages.Add("new-user", new UserAddForm());
+            _pages.Add("profile", new UserProfile());
 
             showPage("dashboard");
 
@@ -63,6 +65,16 @@ namespace MyClinic_1._0.src.features.forms.admin
         {
             showPage("users");
             HighlightButton(btnadminUtilisateurs);
+        }
+
+        private void btnAdminActivity_Click(object sender, EventArgs e)
+        {
+            showPage("new-user");
+        }
+
+        private void btnAdminProfile_Click(object sender, EventArgs e)
+        {
+            showPage("profile");
         }
     }
 }

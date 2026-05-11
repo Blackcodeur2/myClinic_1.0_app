@@ -302,6 +302,7 @@
             btnAdminProfile.Size = new Size(280, 64);
             btnAdminProfile.TabIndex = 4;
             btnAdminProfile.Text = "Mon Profil";
+            btnAdminProfile.Click += btnAdminProfile_Click;
             // 
             // btnAdminSettings
             // 
@@ -342,6 +343,7 @@
             btnAdminActivity.Size = new Size(280, 64);
             btnAdminActivity.TabIndex = 2;
             btnAdminActivity.Text = "Centre d'activités";
+            btnAdminActivity.Click += btnAdminActivity_Click;
             // 
             // btnadminUtilisateurs
             // 
