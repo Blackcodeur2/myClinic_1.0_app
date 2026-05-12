@@ -19,7 +19,24 @@ namespace MyClinic_1._0.src.features.forms.splash
 
         private void SplashView_Load(object sender, EventArgs e)
         {
-            var text = "bonjour";
+            myProgressBar.Value = 0;
+            progressTimer.Start();
+        }
+
+        private void guna2ContainerControl3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressTimer_Tick(object sender, EventArgs e)
+        {
+            myProgressBar.Value += 2;
+            if (myProgressBar.Value >= 100)
+            {
+                progressTimer.Stop();
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
         }
     }
 }
