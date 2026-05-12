@@ -74,6 +74,11 @@
             guna2ContainerControl2 = new Guna.UI2.WinForms.Guna2ContainerControl();
             label2 = new Label();
             adminSideBarPanel = new Guna.UI2.WinForms.Guna2ContainerControl();
+            iconButton5 = new FontAwesome.Sharp.IconButton();
+            iconButton4 = new FontAwesome.Sharp.IconButton();
+            iconButton3 = new FontAwesome.Sharp.IconButton();
+            iconButton2 = new FontAwesome.Sharp.IconButton();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             btnAdminProfile = new Guna.UI2.WinForms.Guna2TileButton();
             btnAdminSettings = new Guna.UI2.WinForms.Guna2TileButton();
             btnAdminActivity = new Guna.UI2.WinForms.Guna2TileButton();
@@ -268,6 +273,11 @@
             // 
             // adminSideBarPanel
             // 
+            adminSideBarPanel.Controls.Add(iconButton5);
+            adminSideBarPanel.Controls.Add(iconButton4);
+            adminSideBarPanel.Controls.Add(iconButton3);
+            adminSideBarPanel.Controls.Add(iconButton2);
+            adminSideBarPanel.Controls.Add(iconButton1);
             adminSideBarPanel.Controls.Add(btnAdminProfile);
             adminSideBarPanel.Controls.Add(btnAdminSettings);
             adminSideBarPanel.Controls.Add(btnAdminActivity);
@@ -282,6 +292,77 @@
             adminSideBarPanel.Size = new Size(280, 590);
             adminSideBarPanel.TabIndex = 4;
             adminSideBarPanel.Text = "guna2ContainerControl3";
+            // 
+            // iconButton5
+            // 
+            iconButton5.BackColor = Color.Transparent;
+            iconButton5.FlatStyle = FlatStyle.Flat;
+            iconButton5.IconChar = FontAwesome.Sharp.IconChar.UserCircle;
+            iconButton5.IconColor = Color.White;
+            iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton5.IconSize = 30;
+            iconButton5.Location = new Point(21, 345);
+            iconButton5.Name = "iconButton5";
+            iconButton5.Size = new Size(36, 39);
+            iconButton5.TabIndex = 8;
+            iconButton5.UseVisualStyleBackColor = false;
+            // 
+            // iconButton4
+            // 
+            iconButton4.BackColor = Color.Transparent;
+            iconButton4.FlatStyle = FlatStyle.Flat;
+            iconButton4.IconChar = FontAwesome.Sharp.IconChar.Server;
+            iconButton4.IconColor = Color.White;
+            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton4.IconSize = 30;
+            iconButton4.Location = new Point(21, 279);
+            iconButton4.Name = "iconButton4";
+            iconButton4.Size = new Size(36, 39);
+            iconButton4.TabIndex = 7;
+            iconButton4.UseVisualStyleBackColor = false;
+            // 
+            // iconButton3
+            // 
+            iconButton3.BackColor = Color.Transparent;
+            iconButton3.FlatStyle = FlatStyle.Flat;
+            iconButton3.IconChar = FontAwesome.Sharp.IconChar.PeopleGroup;
+            iconButton3.IconColor = Color.White;
+            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton3.IconSize = 30;
+            iconButton3.Location = new Point(21, 206);
+            iconButton3.Name = "iconButton3";
+            iconButton3.Size = new Size(36, 39);
+            iconButton3.TabIndex = 6;
+            iconButton3.UseVisualStyleBackColor = false;
+            // 
+            // iconButton2
+            // 
+            iconButton2.BackColor = Color.Transparent;
+            iconButton2.FlatStyle = FlatStyle.Flat;
+            iconButton2.IconChar = FontAwesome.Sharp.IconChar.PeopleGroup;
+            iconButton2.IconColor = Color.White;
+            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton2.IconSize = 30;
+            iconButton2.Location = new Point(21, 138);
+            iconButton2.Name = "iconButton2";
+            iconButton2.Size = new Size(36, 39);
+            iconButton2.TabIndex = 5;
+            iconButton2.UseVisualStyleBackColor = false;
+            // 
+            // iconButton1
+            // 
+            iconButton1.BackColor = Color.Transparent;
+            iconButton1.FlatStyle = FlatStyle.Flat;
+            iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.HomeLg;
+            iconButton1.IconColor = Color.White;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.IconSize = 30;
+            iconButton1.Location = new Point(21, 69);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(36, 39);
+            iconButton1.TabIndex = 0;
+            iconButton1.UseVisualStyleBackColor = false;
             // 
             // btnAdminProfile
             // 
@@ -316,7 +397,7 @@
             btnAdminSettings.FillColor = Color.FromArgb(31, 44, 63);
             btnAdminSettings.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAdminSettings.ForeColor = Color.White;
-            btnAdminSettings.Location = new Point(0, 265);
+            btnAdminSettings.Location = new Point(-6, 265);
             btnAdminSettings.Name = "btnAdminSettings";
             btnAdminSettings.PressedColor = Color.FromArgb(31, 44, 63);
             btnAdminSettings.ShadowDecoration.CustomizableEdges = customizableEdges21;
@@ -382,6 +463,7 @@
             btnAdminDashboard.Name = "btnAdminDashboard";
             btnAdminDashboard.PressedColor = Color.FromArgb(31, 44, 63);
             btnAdminDashboard.ShadowDecoration.CustomizableEdges = customizableEdges27;
+            btnAdminDashboard.ShadowDecoration.Shadow = new Padding(0);
             btnAdminDashboard.Size = new Size(280, 64);
             btnAdminDashboard.TabIndex = 0;
             btnAdminDashboard.Text = "Tableau de bord";
@@ -444,5 +526,10 @@
         private Guna.UI2.WinForms.Guna2TileButton btnadminUtilisateurs;
         private Guna.UI2.WinForms.Guna2TileButton btnAdminDashboard;
         private Guna.UI2.WinForms.Guna2ContainerControl adminLayoutContainer;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton iconButton3;
     }
 }

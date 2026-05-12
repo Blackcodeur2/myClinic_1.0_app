@@ -225,7 +225,7 @@
             // 
             guna2ContainerControl12.CustomizableEdges = customizableEdges15;
             guna2ContainerControl12.Dock = DockStyle.Fill;
-            guna2ContainerControl12.Location = new Point(688, 5);
+            guna2ContainerControl12.Location = new Point(774, 5);
             guna2ContainerControl12.Name = "guna2ContainerControl12";
             guna2ContainerControl12.ShadowDecoration.CustomizableEdges = customizableEdges16;
             guna2ContainerControl12.Size = new Size(0, 519);
@@ -244,7 +244,7 @@
             guna2ContainerControl7.Name = "guna2ContainerControl7";
             guna2ContainerControl7.Padding = new Padding(5);
             guna2ContainerControl7.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            guna2ContainerControl7.Size = new Size(683, 519);
+            guna2ContainerControl7.Size = new Size(769, 519);
             guna2ContainerControl7.TabIndex = 1;
             guna2ContainerControl7.Text = "guna2ContainerControl7";
             // 
@@ -259,7 +259,7 @@
             guna2ContainerControl11.Name = "guna2ContainerControl11";
             guna2ContainerControl11.Padding = new Padding(5);
             guna2ContainerControl11.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2ContainerControl11.Size = new Size(673, 460);
+            guna2ContainerControl11.Size = new Size(759, 460);
             guna2ContainerControl11.TabIndex = 2;
             guna2ContainerControl11.Text = "guna2ContainerControl11";
             // 
@@ -293,7 +293,7 @@
             guna2DataGridView1.Name = "guna2DataGridView1";
             guna2DataGridView1.RowHeadersVisible = false;
             guna2DataGridView1.RowHeadersWidth = 51;
-            guna2DataGridView1.Size = new Size(663, 303);
+            guna2DataGridView1.Size = new Size(749, 303);
             guna2DataGridView1.TabIndex = 0;
             guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightGrid;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
@@ -353,7 +353,7 @@
             guna2ContainerControl9.Name = "guna2ContainerControl9";
             guna2ContainerControl9.Padding = new Padding(5);
             guna2ContainerControl9.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            guna2ContainerControl9.Size = new Size(673, 49);
+            guna2ContainerControl9.Size = new Size(759, 49);
             guna2ContainerControl9.TabIndex = 1;
             guna2ContainerControl9.Text = "guna2ContainerControl9";
             // 

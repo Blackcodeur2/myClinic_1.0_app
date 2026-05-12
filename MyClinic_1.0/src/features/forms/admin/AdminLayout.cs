@@ -31,7 +31,7 @@ namespace MyClinic_1._0.src.features.forms.admin
 
         }
 
-        public virtual void showPage(string pageKey)
+        private void showPage(string pageKey)
         {
             if (_currentPage != null)
                 _currentPage.Visible = false;

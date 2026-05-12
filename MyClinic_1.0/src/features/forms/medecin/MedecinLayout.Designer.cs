@@ -79,7 +79,8 @@
             guna2TileButton2 = new Guna.UI2.WinForms.Guna2TileButton();
             guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
             btnReceptionisteAccueil = new Guna.UI2.WinForms.Guna2TileButton();
-            receptionisteLayoutContainer = new Guna.UI2.WinForms.Guna2ContainerControl();
+            medecinLayoutContainer = new Guna.UI2.WinForms.Guna2ContainerControl();
+            iconButton5 = new FontAwesome.Sharp.IconButton();
             guna2ContainerControl1.SuspendLayout();
             guna2ContainerControl6.SuspendLayout();
             guna2ContainerControl4.SuspendLayout();
@@ -265,6 +266,7 @@
             // 
             // guna2ContainerControl3
             // 
+            guna2ContainerControl3.Controls.Add(iconButton5);
             guna2ContainerControl3.Controls.Add(guna2TileButton4);
             guna2ContainerControl3.Controls.Add(guna2TileButton3);
             guna2ContainerControl3.Controls.Add(guna2TileButton2);
@@ -298,7 +300,8 @@
             guna2TileButton4.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2TileButton4.Size = new Size(280, 64);
             guna2TileButton4.TabIndex = 4;
-            guna2TileButton4.Text = "Accueil";
+            guna2TileButton4.Text = "Mon Profil";
+            guna2TileButton4.Click += guna2TileButton4_Click;
             // 
             // guna2TileButton3
             // 
@@ -380,24 +383,38 @@
             btnReceptionisteAccueil.TabIndex = 0;
             btnReceptionisteAccueil.Text = "Accueil";
             // 
-            // receptionisteLayoutContainer
+            // medecinLayoutContainer
             // 
-            receptionisteLayoutContainer.CustomizableEdges = customizableEdges1;
-            receptionisteLayoutContainer.Dock = DockStyle.Fill;
-            receptionisteLayoutContainer.Location = new Point(280, 66);
-            receptionisteLayoutContainer.Name = "receptionisteLayoutContainer";
-            receptionisteLayoutContainer.Padding = new Padding(50);
-            receptionisteLayoutContainer.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            receptionisteLayoutContainer.Size = new Size(1082, 629);
-            receptionisteLayoutContainer.TabIndex = 4;
-            receptionisteLayoutContainer.Text = "guna2ContainerControl5";
+            medecinLayoutContainer.CustomizableEdges = customizableEdges1;
+            medecinLayoutContainer.Dock = DockStyle.Fill;
+            medecinLayoutContainer.Location = new Point(280, 66);
+            medecinLayoutContainer.Name = "medecinLayoutContainer";
+            medecinLayoutContainer.Padding = new Padding(50);
+            medecinLayoutContainer.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            medecinLayoutContainer.Size = new Size(1082, 629);
+            medecinLayoutContainer.TabIndex = 4;
+            medecinLayoutContainer.Text = "guna2ContainerControl5";
+            // 
+            // iconButton5
+            // 
+            iconButton5.BackColor = Color.Transparent;
+            iconButton5.FlatStyle = FlatStyle.Flat;
+            iconButton5.IconChar = FontAwesome.Sharp.IconChar.UserCircle;
+            iconButton5.IconColor = Color.White;
+            iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton5.IconSize = 30;
+            iconButton5.Location = new Point(33, 346);
+            iconButton5.Name = "iconButton5";
+            iconButton5.Size = new Size(36, 39);
+            iconButton5.TabIndex = 9;
+            iconButton5.UseVisualStyleBackColor = false;
             // 
             // MedecinLayout
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1362, 731);
-            Controls.Add(receptionisteLayoutContainer);
+            Controls.Add(medecinLayoutContainer);
             Controls.Add(guna2ContainerControl3);
             Controls.Add(guna2ContainerControl2);
             Controls.Add(guna2ContainerControl1);
@@ -437,6 +454,7 @@
         private Guna.UI2.WinForms.Guna2TileButton guna2TileButton2;
         private Guna.UI2.WinForms.Guna2TileButton guna2TileButton1;
         private Guna.UI2.WinForms.Guna2TileButton btnReceptionisteAccueil;
-        private Guna.UI2.WinForms.Guna2ContainerControl receptionisteLayoutContainer;
+        private Guna.UI2.WinForms.Guna2ContainerControl medecinLayoutContainer;
+        private FontAwesome.Sharp.IconButton iconButton5;
     }
 }
