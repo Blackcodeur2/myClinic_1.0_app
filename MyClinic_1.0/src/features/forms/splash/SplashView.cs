@@ -15,6 +15,7 @@ namespace MyClinic_1._0.src.features.forms.splash
         public SplashView()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void SplashView_Load(object sender, EventArgs e)
@@ -37,6 +38,11 @@ namespace MyClinic_1._0.src.features.forms.splash
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
+        }
+
+        private void myProgressBar_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

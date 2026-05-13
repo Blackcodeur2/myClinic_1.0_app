@@ -51,6 +51,7 @@
             // 
             // guna2BorderlessForm1
             // 
+            guna2BorderlessForm1.BorderRadius = 5;
             guna2BorderlessForm1.ContainerControl = this;
             guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             guna2BorderlessForm1.TransparentWhileDrag = true;
@@ -132,6 +133,7 @@
             myProgressBar.Text = "guna2ProgressBar1";
             myProgressBar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             myProgressBar.Value = 20;
+            myProgressBar.ValueChanged += myProgressBar_ValueChanged;
             // 
             // progressTimer
             // 

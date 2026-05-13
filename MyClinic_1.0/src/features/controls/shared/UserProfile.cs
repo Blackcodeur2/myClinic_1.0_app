@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyClinic_1._0.src.features.forms.auth;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace MyClinic_1._0.src.features.controls.shared
         public UserProfile()
         {
             InitializeComponent();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            ChangePassword form = new ChangePassword();
+            form.ShowDialog();
         }
     }
 }

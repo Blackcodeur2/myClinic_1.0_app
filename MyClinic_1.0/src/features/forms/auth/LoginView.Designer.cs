@@ -270,6 +270,7 @@
             btnLogin.Size = new Size(282, 56);
             btnLogin.TabIndex = 3;
             btnLogin.Text = "Se Connecter";
+            btnLogin.Click += btnLogin_Click;
             // 
             // guna2TextBox2
             // 
@@ -288,7 +289,7 @@
             guna2TextBox2.Location = new Point(55, 327);
             guna2TextBox2.Margin = new Padding(3, 4, 3, 4);
             guna2TextBox2.Name = "guna2TextBox2";
-            guna2TextBox2.PlaceholderText = "";
+            guna2TextBox2.PlaceholderText = "Entrez votre  mot de passe";
             guna2TextBox2.SelectedText = "";
             guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2TextBox2.Size = new Size(450, 51);
@@ -311,7 +312,7 @@
             guna2TextBox1.Location = new Point(55, 193);
             guna2TextBox1.Margin = new Padding(3, 4, 3, 4);
             guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PlaceholderText = "";
+            guna2TextBox1.PlaceholderText = "Entrez votre login";
             guna2TextBox1.SelectedText = "";
             guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2TextBox1.Size = new Size(450, 51);
@@ -340,6 +341,7 @@
             Controls.Add(guna2ContainerControl1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "LoginView";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginView";
             guna2ContainerControl1.ResumeLayout(false);
             guna2ContainerControl6.ResumeLayout(false);

@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MyClinic_1._0.src.data.database;
 using MyClinic_1._0.src.features.forms.admin;
+using MyClinic_1._0.src.features.forms.auth;
 using MyClinic_1._0.src.features.forms.splash;
 
 namespace MyClinic_1._0
@@ -46,7 +47,7 @@ namespace MyClinic_1._0
                 }
             }
 
-            Application.Run(new AdminLayout());
+            Application.Run(new LoginView());
         }
     }
 }

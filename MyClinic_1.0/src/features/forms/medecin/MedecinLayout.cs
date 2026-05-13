@@ -1,4 +1,5 @@
-﻿using MyClinic_1._0.src.features.controls.shared;
+﻿using MyClinic_1._0.src.features.controls.medecin;
+using MyClinic_1._0.src.features.controls.shared;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,9 +21,14 @@ namespace MyClinic_1._0.src.features.forms.medecin
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
             this.MinimumSize = new Size(800, 600);
+            _pages.Add("dashboard", new MedecinDashboard());
+            _pages.Add("consultations", new MedecinConsultations());
+            _pages.Add("medicaments", new MedecinMedicaments());
+            _pages.Add("services", new MedecinServices());
+            _pages.Add("patients", new MedecinPatients());
             _pages.Add("profile", new UserProfile());
 
-            showPage("profile");
+            showPage("dashboard");
         }
 
         private void showPage(string pageKey)
@@ -45,7 +51,32 @@ namespace MyClinic_1._0.src.features.forms.medecin
 
         private void guna2TileButton4_Click(object sender, EventArgs e)
         {
+            showPage("medicaments");
+        }
+
+        private void btnReceptionisteAccueil_Click(object sender, EventArgs e)
+        {
+            showPage("dashboard");
+        }
+
+        private void btnMedecinProfile_Click(object sender, EventArgs e)
+        {
             showPage("profile");
+        }
+
+        private void btnMedecinServices_Click(object sender, EventArgs e)
+        {
+            showPage("services");
+        }
+
+        private void btnMedecinConsultaions_Click(object sender, EventArgs e)
+        {
+            showPage("consultations");
+        }
+
+        private void btnMedecinPatients_Click(object sender, EventArgs e)
+        {
+            showPage("patients");
         }
     }
 }

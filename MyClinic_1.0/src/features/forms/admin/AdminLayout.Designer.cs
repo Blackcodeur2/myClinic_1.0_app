@@ -74,11 +74,11 @@
             guna2ContainerControl2 = new Guna.UI2.WinForms.Guna2ContainerControl();
             label2 = new Label();
             adminSideBarPanel = new Guna.UI2.WinForms.Guna2ContainerControl();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             iconButton5 = new FontAwesome.Sharp.IconButton();
             iconButton4 = new FontAwesome.Sharp.IconButton();
             iconButton3 = new FontAwesome.Sharp.IconButton();
             iconButton2 = new FontAwesome.Sharp.IconButton();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
             btnAdminProfile = new Guna.UI2.WinForms.Guna2TileButton();
             btnAdminSettings = new Guna.UI2.WinForms.Guna2TileButton();
             btnAdminActivity = new Guna.UI2.WinForms.Guna2TileButton();
@@ -273,11 +273,11 @@
             // 
             // adminSideBarPanel
             // 
+            adminSideBarPanel.Controls.Add(iconButton1);
             adminSideBarPanel.Controls.Add(iconButton5);
             adminSideBarPanel.Controls.Add(iconButton4);
             adminSideBarPanel.Controls.Add(iconButton3);
             adminSideBarPanel.Controls.Add(iconButton2);
-            adminSideBarPanel.Controls.Add(iconButton1);
             adminSideBarPanel.Controls.Add(btnAdminProfile);
             adminSideBarPanel.Controls.Add(btnAdminSettings);
             adminSideBarPanel.Controls.Add(btnAdminActivity);
@@ -292,6 +292,21 @@
             adminSideBarPanel.Size = new Size(280, 590);
             adminSideBarPanel.TabIndex = 4;
             adminSideBarPanel.Text = "guna2ContainerControl3";
+            // 
+            // iconButton1
+            // 
+            iconButton1.BackColor = Color.Transparent;
+            iconButton1.FlatStyle = FlatStyle.Flat;
+            iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Dashboard;
+            iconButton1.IconColor = Color.White;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.IconSize = 30;
+            iconButton1.Location = new Point(21, 67);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(36, 39);
+            iconButton1.TabIndex = 11;
+            iconButton1.UseVisualStyleBackColor = false;
             // 
             // iconButton5
             // 
@@ -325,7 +340,7 @@
             // 
             iconButton3.BackColor = Color.Transparent;
             iconButton3.FlatStyle = FlatStyle.Flat;
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.PeopleGroup;
+            iconButton3.IconChar = FontAwesome.Sharp.IconChar.Add;
             iconButton3.IconColor = Color.White;
             iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton3.IconSize = 30;
@@ -348,21 +363,6 @@
             iconButton2.Size = new Size(36, 39);
             iconButton2.TabIndex = 5;
             iconButton2.UseVisualStyleBackColor = false;
-            // 
-            // iconButton1
-            // 
-            iconButton1.BackColor = Color.Transparent;
-            iconButton1.FlatStyle = FlatStyle.Flat;
-            iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.HomeLg;
-            iconButton1.IconColor = Color.White;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.IconSize = 30;
-            iconButton1.Location = new Point(21, 69);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(36, 39);
-            iconButton1.TabIndex = 0;
-            iconButton1.UseVisualStyleBackColor = false;
             // 
             // btnAdminProfile
             // 
@@ -404,6 +404,7 @@
             btnAdminSettings.Size = new Size(280, 64);
             btnAdminSettings.TabIndex = 3;
             btnAdminSettings.Text = "Mes Parametres";
+            btnAdminSettings.Click += btnAdminSettings_Click;
             // 
             // btnAdminActivity
             // 
@@ -423,7 +424,7 @@
             btnAdminActivity.ShadowDecoration.CustomizableEdges = customizableEdges23;
             btnAdminActivity.Size = new Size(280, 64);
             btnAdminActivity.TabIndex = 2;
-            btnAdminActivity.Text = "Centre d'activités";
+            btnAdminActivity.Text = "Nouvel utilisateur";
             btnAdminActivity.Click += btnAdminActivity_Click;
             // 
             // btnadminUtilisateurs
@@ -526,10 +527,10 @@
         private Guna.UI2.WinForms.Guna2TileButton btnadminUtilisateurs;
         private Guna.UI2.WinForms.Guna2TileButton btnAdminDashboard;
         private Guna.UI2.WinForms.Guna2ContainerControl adminLayoutContainer;
-        private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton5;
         private FontAwesome.Sharp.IconButton iconButton4;
         private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

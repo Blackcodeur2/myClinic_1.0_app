@@ -76,5 +76,10 @@ namespace MyClinic_1._0.src.features.forms.admin
         {
             showPage("profile");
         }
+
+        private void btnAdminSettings_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

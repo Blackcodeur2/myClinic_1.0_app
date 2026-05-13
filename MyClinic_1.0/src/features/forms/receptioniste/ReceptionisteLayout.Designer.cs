@@ -45,20 +45,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2ContainerControl1 = new Guna.UI2.WinForms.Guna2ContainerControl();
@@ -73,20 +63,23 @@
             guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
             guna2ContainerControl2 = new Guna.UI2.WinForms.Guna2ContainerControl();
             label2 = new Label();
-            guna2ContainerControl3 = new Guna.UI2.WinForms.Guna2ContainerControl();
-            guna2TileButton4 = new Guna.UI2.WinForms.Guna2TileButton();
-            guna2TileButton3 = new Guna.UI2.WinForms.Guna2TileButton();
-            guna2TileButton2 = new Guna.UI2.WinForms.Guna2TileButton();
-            guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
-            btnReceptionisteAccueil = new Guna.UI2.WinForms.Guna2TileButton();
             receptionisteLayoutContainer = new Guna.UI2.WinForms.Guna2ContainerControl();
+            receptionisteLayoutContent = new Guna.UI2.WinForms.Guna2ContainerControl();
+            AppNavBar = new MenuStrip();
+            accueilToolStripMenuItem = new ToolStripMenuItem();
+            nosServicesToolStripMenuItem = new ToolStripMenuItem();
+            nosPatientsToolStripMenuItem = new ToolStripMenuItem();
+            ventesToolStripMenuItem = new ToolStripMenuItem();
+            facturationToolStripMenuItem = new ToolStripMenuItem();
+            monProfilToolStripMenuItem = new ToolStripMenuItem();
             guna2ContainerControl1.SuspendLayout();
             guna2ContainerControl6.SuspendLayout();
             guna2ContainerControl4.SuspendLayout();
             guna2ContainerControl7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).BeginInit();
             guna2ContainerControl2.SuspendLayout();
-            guna2ContainerControl3.SuspendLayout();
+            receptionisteLayoutContainer.SuspendLayout();
+            AppNavBar.SuspendLayout();
             SuspendLayout();
             // 
             // guna2ContainerControl1
@@ -240,12 +233,12 @@
             // guna2ContainerControl2
             // 
             guna2ContainerControl2.Controls.Add(label2);
-            guna2ContainerControl2.CustomizableEdges = customizableEdges30;
+            guna2ContainerControl2.CustomizableEdges = customizableEdges20;
             guna2ContainerControl2.Dock = DockStyle.Bottom;
             guna2ContainerControl2.FillColor = Color.FromArgb(41, 41, 41);
             guna2ContainerControl2.Location = new Point(0, 655);
             guna2ContainerControl2.Name = "guna2ContainerControl2";
-            guna2ContainerControl2.ShadowDecoration.CustomizableEdges = customizableEdges31;
+            guna2ContainerControl2.ShadowDecoration.CustomizableEdges = customizableEdges21;
             guna2ContainerControl2.Size = new Size(1384, 36);
             guna2ContainerControl2.TabIndex = 1;
             guna2ContainerControl2.Text = "guna2ContainerControl2";
@@ -263,134 +256,87 @@
             label2.TabIndex = 2;
             label2.Text = "Version 1.0";
             // 
-            // guna2ContainerControl3
-            // 
-            guna2ContainerControl3.Controls.Add(guna2TileButton4);
-            guna2ContainerControl3.Controls.Add(guna2TileButton3);
-            guna2ContainerControl3.Controls.Add(guna2TileButton2);
-            guna2ContainerControl3.Controls.Add(guna2TileButton1);
-            guna2ContainerControl3.Controls.Add(btnReceptionisteAccueil);
-            guna2ContainerControl3.CustomizableEdges = customizableEdges28;
-            guna2ContainerControl3.Dock = DockStyle.Left;
-            guna2ContainerControl3.FillColor = Color.FromArgb(31, 44, 63);
-            guna2ContainerControl3.Location = new Point(0, 66);
-            guna2ContainerControl3.Name = "guna2ContainerControl3";
-            guna2ContainerControl3.ShadowDecoration.CustomizableEdges = customizableEdges29;
-            guna2ContainerControl3.Size = new Size(280, 589);
-            guna2ContainerControl3.TabIndex = 2;
-            guna2ContainerControl3.Text = "guna2ContainerControl3";
-            // 
-            // guna2TileButton4
-            // 
-            guna2TileButton4.Animated = true;
-            guna2TileButton4.BorderColor = Color.Transparent;
-            guna2TileButton4.CustomizableEdges = customizableEdges18;
-            guna2TileButton4.DisabledState.BorderColor = Color.DarkGray;
-            guna2TileButton4.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2TileButton4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2TileButton4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2TileButton4.FillColor = Color.FromArgb(31, 44, 63);
-            guna2TileButton4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2TileButton4.ForeColor = Color.White;
-            guna2TileButton4.Location = new Point(0, 335);
-            guna2TileButton4.Name = "guna2TileButton4";
-            guna2TileButton4.PressedColor = Color.FromArgb(31, 44, 63);
-            guna2TileButton4.ShadowDecoration.CustomizableEdges = customizableEdges19;
-            guna2TileButton4.Size = new Size(280, 64);
-            guna2TileButton4.TabIndex = 4;
-            guna2TileButton4.Text = "Accueil";
-            // 
-            // guna2TileButton3
-            // 
-            guna2TileButton3.Animated = true;
-            guna2TileButton3.BorderColor = Color.Transparent;
-            guna2TileButton3.CustomizableEdges = customizableEdges20;
-            guna2TileButton3.DisabledState.BorderColor = Color.DarkGray;
-            guna2TileButton3.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2TileButton3.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2TileButton3.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2TileButton3.FillColor = Color.FromArgb(31, 44, 63);
-            guna2TileButton3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2TileButton3.ForeColor = Color.White;
-            guna2TileButton3.Location = new Point(0, 265);
-            guna2TileButton3.Name = "guna2TileButton3";
-            guna2TileButton3.PressedColor = Color.FromArgb(31, 44, 63);
-            guna2TileButton3.ShadowDecoration.CustomizableEdges = customizableEdges21;
-            guna2TileButton3.Size = new Size(280, 64);
-            guna2TileButton3.TabIndex = 3;
-            guna2TileButton3.Text = "Accueil";
-            // 
-            // guna2TileButton2
-            // 
-            guna2TileButton2.Animated = true;
-            guna2TileButton2.BorderColor = Color.Transparent;
-            guna2TileButton2.CustomizableEdges = customizableEdges22;
-            guna2TileButton2.DisabledState.BorderColor = Color.DarkGray;
-            guna2TileButton2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2TileButton2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2TileButton2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2TileButton2.FillColor = Color.FromArgb(31, 44, 63);
-            guna2TileButton2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2TileButton2.ForeColor = Color.White;
-            guna2TileButton2.Location = new Point(0, 195);
-            guna2TileButton2.Name = "guna2TileButton2";
-            guna2TileButton2.PressedColor = Color.FromArgb(31, 44, 63);
-            guna2TileButton2.ShadowDecoration.CustomizableEdges = customizableEdges23;
-            guna2TileButton2.Size = new Size(280, 64);
-            guna2TileButton2.TabIndex = 2;
-            guna2TileButton2.Text = "Accueil";
-            // 
-            // guna2TileButton1
-            // 
-            guna2TileButton1.Animated = true;
-            guna2TileButton1.BorderColor = Color.Transparent;
-            guna2TileButton1.CustomizableEdges = customizableEdges24;
-            guna2TileButton1.DisabledState.BorderColor = Color.DarkGray;
-            guna2TileButton1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2TileButton1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2TileButton1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2TileButton1.FillColor = Color.FromArgb(31, 44, 63);
-            guna2TileButton1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2TileButton1.ForeColor = Color.White;
-            guna2TileButton1.Location = new Point(0, 125);
-            guna2TileButton1.Name = "guna2TileButton1";
-            guna2TileButton1.PressedColor = Color.FromArgb(31, 44, 63);
-            guna2TileButton1.ShadowDecoration.CustomizableEdges = customizableEdges25;
-            guna2TileButton1.Size = new Size(280, 64);
-            guna2TileButton1.TabIndex = 1;
-            guna2TileButton1.Text = "Accueil";
-            // 
-            // btnReceptionisteAccueil
-            // 
-            btnReceptionisteAccueil.Animated = true;
-            btnReceptionisteAccueil.BorderColor = Color.Transparent;
-            btnReceptionisteAccueil.CustomizableEdges = customizableEdges26;
-            btnReceptionisteAccueil.DisabledState.BorderColor = Color.DarkGray;
-            btnReceptionisteAccueil.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnReceptionisteAccueil.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnReceptionisteAccueil.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnReceptionisteAccueil.FillColor = Color.FromArgb(31, 44, 63);
-            btnReceptionisteAccueil.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnReceptionisteAccueil.ForeColor = Color.White;
-            btnReceptionisteAccueil.Location = new Point(0, 55);
-            btnReceptionisteAccueil.Name = "btnReceptionisteAccueil";
-            btnReceptionisteAccueil.PressedColor = Color.FromArgb(31, 44, 63);
-            btnReceptionisteAccueil.ShadowDecoration.CustomizableEdges = customizableEdges27;
-            btnReceptionisteAccueil.Size = new Size(280, 64);
-            btnReceptionisteAccueil.TabIndex = 0;
-            btnReceptionisteAccueil.Text = "Accueil";
-            // 
             // receptionisteLayoutContainer
             // 
-            receptionisteLayoutContainer.CustomizableEdges = customizableEdges16;
+            receptionisteLayoutContainer.Controls.Add(receptionisteLayoutContent);
+            receptionisteLayoutContainer.Controls.Add(AppNavBar);
+            receptionisteLayoutContainer.CustomizableEdges = customizableEdges18;
             receptionisteLayoutContainer.Dock = DockStyle.Fill;
-            receptionisteLayoutContainer.Location = new Point(280, 66);
+            receptionisteLayoutContainer.Location = new Point(0, 66);
             receptionisteLayoutContainer.Name = "receptionisteLayoutContainer";
-            receptionisteLayoutContainer.Padding = new Padding(50);
-            receptionisteLayoutContainer.ShadowDecoration.CustomizableEdges = customizableEdges17;
-            receptionisteLayoutContainer.Size = new Size(1104, 589);
+            receptionisteLayoutContainer.ShadowDecoration.CustomizableEdges = customizableEdges19;
+            receptionisteLayoutContainer.Size = new Size(1384, 589);
             receptionisteLayoutContainer.TabIndex = 3;
             receptionisteLayoutContainer.Text = "guna2ContainerControl5";
+            // 
+            // receptionisteLayoutContent
+            // 
+            receptionisteLayoutContent.BorderColor = Color.Transparent;
+            receptionisteLayoutContent.BorderThickness = 2;
+            receptionisteLayoutContent.CustomizableEdges = customizableEdges16;
+            receptionisteLayoutContent.Dock = DockStyle.Fill;
+            receptionisteLayoutContent.ForeColor = Color.Black;
+            receptionisteLayoutContent.Location = new Point(0, 42);
+            receptionisteLayoutContent.Name = "receptionisteLayoutContent";
+            receptionisteLayoutContent.Padding = new Padding(30);
+            receptionisteLayoutContent.ShadowDecoration.CustomizableEdges = customizableEdges17;
+            receptionisteLayoutContent.Size = new Size(1384, 547);
+            receptionisteLayoutContent.TabIndex = 1;
+            receptionisteLayoutContent.Text = "guna2ContainerControl3";
+            // 
+            // AppNavBar
+            // 
+            AppNavBar.BackColor = Color.Transparent;
+            AppNavBar.BackgroundImage = (Image)resources.GetObject("AppNavBar.BackgroundImage");
+            AppNavBar.BackgroundImageLayout = ImageLayout.Center;
+            AppNavBar.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            AppNavBar.ImageScalingSize = new Size(20, 20);
+            AppNavBar.Items.AddRange(new ToolStripItem[] { accueilToolStripMenuItem, nosServicesToolStripMenuItem, nosPatientsToolStripMenuItem, ventesToolStripMenuItem, facturationToolStripMenuItem, monProfilToolStripMenuItem });
+            AppNavBar.Location = new Point(0, 0);
+            AppNavBar.Name = "AppNavBar";
+            AppNavBar.Padding = new Padding(6, 5, 0, 5);
+            AppNavBar.RenderMode = ToolStripRenderMode.Professional;
+            AppNavBar.Size = new Size(1384, 42);
+            AppNavBar.TabIndex = 0;
+            // 
+            // accueilToolStripMenuItem
+            // 
+            accueilToolStripMenuItem.Name = "accueilToolStripMenuItem";
+            accueilToolStripMenuItem.Size = new Size(90, 32);
+            accueilToolStripMenuItem.Text = "Accueil";
+            accueilToolStripMenuItem.Click += accueilToolStripMenuItem_Click;
+            // 
+            // nosServicesToolStripMenuItem
+            // 
+            nosServicesToolStripMenuItem.Name = "nosServicesToolStripMenuItem";
+            nosServicesToolStripMenuItem.Size = new Size(140, 32);
+            nosServicesToolStripMenuItem.Text = "Nos services";
+            // 
+            // nosPatientsToolStripMenuItem
+            // 
+            nosPatientsToolStripMenuItem.Name = "nosPatientsToolStripMenuItem";
+            nosPatientsToolStripMenuItem.Size = new Size(141, 32);
+            nosPatientsToolStripMenuItem.Text = "Nos patients";
+            // 
+            // ventesToolStripMenuItem
+            // 
+            ventesToolStripMenuItem.Name = "ventesToolStripMenuItem";
+            ventesToolStripMenuItem.Size = new Size(88, 32);
+            ventesToolStripMenuItem.Text = "Ventes";
+            ventesToolStripMenuItem.Click += ventesToolStripMenuItem_Click;
+            // 
+            // facturationToolStripMenuItem
+            // 
+            facturationToolStripMenuItem.Name = "facturationToolStripMenuItem";
+            facturationToolStripMenuItem.Size = new Size(126, 32);
+            facturationToolStripMenuItem.Text = "Facturation";
+            // 
+            // monProfilToolStripMenuItem
+            // 
+            monProfilToolStripMenuItem.Name = "monProfilToolStripMenuItem";
+            monProfilToolStripMenuItem.Size = new Size(122, 32);
+            monProfilToolStripMenuItem.Text = "Mon profil";
+            monProfilToolStripMenuItem.Click += monProfilToolStripMenuItem_Click;
             // 
             // ReceptionisteLayout
             // 
@@ -398,10 +344,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1384, 691);
             Controls.Add(receptionisteLayoutContainer);
-            Controls.Add(guna2ContainerControl3);
             Controls.Add(guna2ContainerControl2);
             Controls.Add(guna2ContainerControl1);
             FormBorderStyle = FormBorderStyle.None;
+            MainMenuStrip = AppNavBar;
             Name = "ReceptionisteLayout";
             Text = "ReceptionisteLayout";
             Load += ReceptionisteLayout_Load;
@@ -413,7 +359,10 @@
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).EndInit();
             guna2ContainerControl2.ResumeLayout(false);
             guna2ContainerControl2.PerformLayout();
-            guna2ContainerControl3.ResumeLayout(false);
+            receptionisteLayoutContainer.ResumeLayout(false);
+            receptionisteLayoutContainer.PerformLayout();
+            AppNavBar.ResumeLayout(false);
+            AppNavBar.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -423,7 +372,6 @@
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl2;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl4;
-        private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl3;
         private Guna.UI2.WinForms.Guna2ContainerControl receptionisteLayoutContainer;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl6;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
@@ -433,10 +381,13 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl7;
         private Label label1;
-        private Guna.UI2.WinForms.Guna2TileButton btnReceptionisteAccueil;
-        private Guna.UI2.WinForms.Guna2TileButton guna2TileButton4;
-        private Guna.UI2.WinForms.Guna2TileButton guna2TileButton3;
-        private Guna.UI2.WinForms.Guna2TileButton guna2TileButton2;
-        private Guna.UI2.WinForms.Guna2TileButton guna2TileButton1;
+        private MenuStrip AppNavBar;
+        private ToolStripMenuItem accueilToolStripMenuItem;
+        private ToolStripMenuItem nosServicesToolStripMenuItem;
+        private ToolStripMenuItem nosPatientsToolStripMenuItem;
+        private ToolStripMenuItem monProfilToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2ContainerControl receptionisteLayoutContent;
+        private ToolStripMenuItem ventesToolStripMenuItem;
+        private ToolStripMenuItem facturationToolStripMenuItem;
     }
 }
