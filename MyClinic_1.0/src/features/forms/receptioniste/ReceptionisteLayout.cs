@@ -21,7 +21,7 @@ namespace MyClinic_1._0.src.features.forms.receptioniste
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
             _pages.Add("accueil", new ReceptionisteAccueil());
-            _pages.Add("profile", new UserProfile());
+            _pages.Add("profile", new MyUserProfile());
             _pages.Add("ventes", new VentesView());
 
             showPage("accueil");

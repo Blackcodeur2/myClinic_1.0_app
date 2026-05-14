@@ -26,7 +26,7 @@ namespace MyClinic_1._0.src.features.forms.medecin
             _pages.Add("medicaments", new MedecinMedicaments());
             _pages.Add("services", new MedecinServices());
             _pages.Add("patients", new MedecinPatients());
-            _pages.Add("profile", new UserProfile());
+            _pages.Add("profile", new MyUserProfile());
 
             showPage("dashboard");
         }
@@ -77,6 +77,11 @@ namespace MyClinic_1._0.src.features.forms.medecin
         private void btnMedecinPatients_Click(object sender, EventArgs e)
         {
             showPage("patients");
+        }
+
+        private void medecinLayoutContainer_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

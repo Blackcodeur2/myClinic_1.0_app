@@ -520,6 +520,7 @@
             medecinLayoutContainer.Size = new Size(1082, 629);
             medecinLayoutContainer.TabIndex = 4;
             medecinLayoutContainer.Text = "guna2ContainerControl5";
+            medecinLayoutContainer.Click += medecinLayoutContainer_Click;
             // 
             // MedecinLayout
             // 

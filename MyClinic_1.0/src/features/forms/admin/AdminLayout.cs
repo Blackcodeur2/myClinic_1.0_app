@@ -25,7 +25,7 @@ namespace MyClinic_1._0.src.features.forms.admin
             _pages.Add("dashboard", new MyAdminDashboard());
             _pages.Add("users", new AdminUsers());
             _pages.Add("new-user", new UserAddForm());
-            _pages.Add("profile", new UserProfile());
+            _pages.Add("profile", new MyUserProfile());
 
             showPage("dashboard");
 
