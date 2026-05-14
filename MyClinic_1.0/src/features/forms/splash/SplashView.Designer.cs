@@ -40,11 +40,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashView));
             guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
             guna2ContainerControl1 = new Guna.UI2.WinForms.Guna2ContainerControl();
+            labelAppName = new Label();
             guna2ContainerControl2 = new Guna.UI2.WinForms.Guna2ContainerControl();
             label1 = new Label();
             guna2ContainerControl3 = new Guna.UI2.WinForms.Guna2ContainerControl();
+            labelPercent = new Label();
             myProgressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
             progressTimer = new System.Windows.Forms.Timer(components);
+            fadeTimer = new System.Windows.Forms.Timer(components);
+            fadeOutTimer = new System.Windows.Forms.Timer(components);
+            guna2ContainerControl1.SuspendLayout();
             guna2ContainerControl2.SuspendLayout();
             guna2ContainerControl3.SuspendLayout();
             SuspendLayout();
@@ -59,6 +64,7 @@
             // guna2ContainerControl1
             // 
             guna2ContainerControl1.BackColor = Color.Transparent;
+            guna2ContainerControl1.Controls.Add(labelAppName);
             guna2ContainerControl1.CustomizableEdges = customizableEdges7;
             guna2ContainerControl1.Dock = DockStyle.Top;
             guna2ContainerControl1.FillColor = Color.Transparent;
@@ -68,6 +74,17 @@
             guna2ContainerControl1.Size = new Size(879, 62);
             guna2ContainerControl1.TabIndex = 0;
             guna2ContainerControl1.Text = "guna2ContainerControl1";
+            // 
+            // labelAppName
+            // 
+            labelAppName.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelAppName.ForeColor = Color.White;
+            labelAppName.Location = new Point(0, 8);
+            labelAppName.Name = "labelAppName";
+            labelAppName.Size = new Size(879, 46);
+            labelAppName.TabIndex = 0;
+            labelAppName.Text = "MyClinic — Gestion clinique";
+            labelAppName.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // guna2ContainerControl2
             // 
@@ -97,6 +114,7 @@
             // guna2ContainerControl3
             // 
             guna2ContainerControl3.BackColor = Color.Transparent;
+            guna2ContainerControl3.Controls.Add(labelPercent);
             guna2ContainerControl3.Controls.Add(myProgressBar);
             guna2ContainerControl3.CustomizableEdges = customizableEdges3;
             guna2ContainerControl3.Dock = DockStyle.Fill;
@@ -110,12 +128,23 @@
             guna2ContainerControl3.Text = "guna2ContainerControl3";
             guna2ContainerControl3.Click += guna2ContainerControl3_Click;
             // 
+            // labelPercent
+            // 
+            labelPercent.AutoSize = true;
+            labelPercent.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelPercent.ForeColor = Color.White;
+            labelPercent.Location = new Point(417, 363);
+            labelPercent.Name = "labelPercent";
+            labelPercent.Size = new Size(35, 23);
+            labelPercent.TabIndex = 1;
+            labelPercent.Text = "0%";
+            labelPercent.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // myProgressBar
             // 
             myProgressBar.BorderColor = Color.FromArgb(224, 224, 224);
             myProgressBar.BorderRadius = 15;
-            myProgressBar.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            myProgressBar.BorderThickness = 2;
+            myProgressBar.BorderThickness = 1;
             myProgressBar.CustomizableEdges = customizableEdges1;
             myProgressBar.FillColor = Color.Transparent;
             myProgressBar.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -126,18 +155,27 @@
             myProgressBar.ProgressColor = Color.Teal;
             myProgressBar.ProgressColor2 = Color.FromArgb(128, 128, 255);
             myProgressBar.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            myProgressBar.ShowText = true;
             myProgressBar.Size = new Size(535, 56);
             myProgressBar.Style = ProgressBarStyle.Continuous;
             myProgressBar.TabIndex = 0;
             myProgressBar.Text = "guna2ProgressBar1";
             myProgressBar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            myProgressBar.Value = 20;
             myProgressBar.ValueChanged += myProgressBar_ValueChanged;
             // 
             // progressTimer
             // 
+            progressTimer.Interval = 40;
             progressTimer.Tick += progressTimer_Tick;
+            // 
+            // fadeTimer
+            // 
+            fadeTimer.Interval = 30;
+            fadeTimer.Tick += fadeTimer_Tick;
+            // 
+            // fadeOutTimer
+            // 
+            fadeOutTimer.Interval = 30;
+            fadeOutTimer.Tick += fadeOutTimer_Tick;
             // 
             // SplashView
             // 
@@ -153,9 +191,11 @@
             Name = "SplashView";
             Text = "SplashView";
             Load += SplashView_Load;
+            guna2ContainerControl1.ResumeLayout(false);
             guna2ContainerControl2.ResumeLayout(false);
             guna2ContainerControl2.PerformLayout();
             guna2ContainerControl3.ResumeLayout(false);
+            guna2ContainerControl3.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -168,5 +208,9 @@
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl3;
         private Guna.UI2.WinForms.Guna2ProgressBar myProgressBar;
         private System.Windows.Forms.Timer progressTimer;
+        private System.Windows.Forms.Timer fadeTimer;
+        private System.Windows.Forms.Timer fadeOutTimer;
+        private Label labelAppName;
+        private Label labelPercent;
     }
 }
