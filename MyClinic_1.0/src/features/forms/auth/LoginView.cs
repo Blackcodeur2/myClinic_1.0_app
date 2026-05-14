@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyClinic_1._0.src.features.forms.medecin;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace MyClinic_1._0.src.features.forms.auth
         public LoginView()
         {
             InitializeComponent();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MedecinLayout form = new MedecinLayout();
+            form.Show();
         }
     }
 }
