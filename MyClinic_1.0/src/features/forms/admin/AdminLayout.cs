@@ -16,13 +16,13 @@ namespace MyClinic_1._0.src.features.forms.admin
     public partial class AdminLayout : Form
     {
         private Dictionary<string, UserControl> _pages = new Dictionary<string, UserControl>();
-        private UserControl _currentPage;
+        private UserControl? _currentPage;
         public AdminLayout()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
             this.MinimumSize = new Size(800, 600);
-            _pages.Add("dashboard", new AdminDashboard());
+            _pages.Add("dashboard", new MyAdminDashboard());
             _pages.Add("users", new AdminUsers());
             _pages.Add("new-user", new UserAddForm());
             _pages.Add("profile", new UserProfile());
